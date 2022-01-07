@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BTVN8</title>
+</head>
+<body>
+    <h2>Coersion - Truthy & Falsy</h2>
+    <p>
+        Bài 1: <br/>
+        var a = 10; <br/>
+        var b = Number(a); <br/>
+        var c = a * 1; <br/>    
+        console.log(a) => 10; <br/>
+        console.log(b) => 10; <br/>
+        console.log(c) => 10; <br/>
+        Ta thấy kiểu dữ liệu của a, b, c đều là number => coercion là chuyển đổi từ kiểu dữ liệu này sang kiểu dữ liệu khác.<br/>
+        Ở ví dụ trên b và c đang có kiểu dữ liệu undefined và chuyển sang kiểu dữ liệu number. 
+    </p>
+    <p>
+        Bài 2: <br/>
+        Khi một giá trị không phải Boolean cần chuyển sang Boolean thì: <br/>
+        - Nếu giá trị đó là một trong các giá trị undefined, null, NaN, 0, "" (chuỗi rỗng) => return false <br/>
+        - Các giá trị còn lại => return true <br/>
+        var a = 10; <br/>
+        var b = ''; <br/>
+        if (a) { <br/>
+            console.log('a is truthy'); <br/>
+        } <br/>
+        a có kiểu dữ liệu là number, value = 10 => if (a) return true => log ra "a is truthy" <br/>
+        if (b) { <br/>
+            console.log('b is truthy'); <br/>
+        } <br/>
+        b có kiểu dữ liệu là string, value rỗng => if (b) return false => skip lệnh console.log('b is truthy') => không log ra gì hết <br/>
+    </p>
+    <h2>Logical Operators & Conditional</h2>
+    <p>
+    Bài 1: <br/>
+    let a = "mindX"; <br/>
+    let b = ''; <br/>
+    if (a || b) { &emsp; &emsp; Có a là true => kết quả trả về là true <br/>
+        console.log("hello") <br/>
+    } <br/>
+    </p>
+    <p>
+    Bài 2: <br/>
+    let a = "mindX"; <br/>
+    let b = ''; <br/>
+
+    if (a && true && !b) { &emsp; &emsp; Có a là true, b là false thì !b là true => kết quả trả về là true <br/>
+        console.log("hello") <br/>
+    } <br/>
+    </p>
+    <p>
+    Bài 3: <br/>
+    let a = -1; <br/>
+    let b = 1; <br/>
+    if (a && b) { <br/>
+        console.log("true"); <br/>
+    } <br/>
+    </p>
+</body>
+</html>
