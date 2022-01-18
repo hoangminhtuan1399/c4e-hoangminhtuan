@@ -14,4 +14,5 @@ form.addEventListener("submit", (event) => {
         event.preventDefault();
         error.innerText = error_message.join("\n");
     }
+    localStorage.setItem("username", username.value);
 });

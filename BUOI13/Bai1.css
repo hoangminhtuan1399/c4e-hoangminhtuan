@@ -1,0 +1,27 @@
+.body {
+    background-color: white;
+    color: black;
+}
+.changeMode {
+    font-size: 18px;
+    background-color: black;
+    color: white;
+    padding: 5px;
+}
+.container {
+    background-color: white;
+    color: black;
+}
+
+.body.dark {
+    background-color: black;
+    color: white;
+}
+.dark .changeMode {
+    background-color: white;
+    color: black;
+}
+.dark .container {
+    background-color: black;
+    color: white;
+}
